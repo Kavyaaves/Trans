@@ -52,13 +52,13 @@ public class Transactions {
     private void viewTransactionHistory(){
         System.out.format("%5s%25s%15s%15s%15s\n", "S. No", "Date","Deposit", "Withdraw", "Balance");
         for (Map.Entry<Integer, History> entry : Hash.entrySet()) {
-                History each = entry.getValue();
-                System.out.format("%5s",entry.getKey()+1);
-                System.out.format("%5s",entry.getKey()+1);
-                System.out.format("%25s",each.getDate());
-                System.out.format("%15s",each.getDeposit());
-                System.out.format("%15s",each.getWithdraw());
-                System.out.format("%15s\n",each.getBalance());
+            History each = entry.getValue();
+            System.out.format("%5s",entry.getKey()+1);
+            System.out.format("%5s",entry.getKey()+1);
+            System.out.format("%25s",each.getDate());
+            System.out.format("%15s",each.getDeposit());
+            System.out.format("%15s",each.getWithdraw());
+            System.out.format("%15s\n",each.getBalance());
         }
         init();
     }
@@ -95,5 +95,3 @@ public class Transactions {
         trans.init();
     }
 }
-
-
